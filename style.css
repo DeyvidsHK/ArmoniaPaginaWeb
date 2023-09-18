@@ -1,11 +1,15 @@
 
 .imagen{
     width: 100% !important;
-    height: 800px !important;
+    height: 1050px !important;
+    min-width: 500px !important;
+    min-height: 100px !important;
 }
 
 .justificar{
     text-align: justify;
-    min-width: 500px !important;
-    min-height: 100px !important;
+}
+
+.historia{
+    background:red;
 }
