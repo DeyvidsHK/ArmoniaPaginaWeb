@@ -1,8 +1,8 @@
 
 .imagen{
     width: 100% !important;
-    height: 1050px !important;
-    min-width: 500px !important;
+    height: 1000px !important;
+    min-width: 200px !important;
     min-height: 100px !important;
 }
 
@@ -10,6 +10,10 @@
     text-align: justify;
 }
 
-.historia{
-    background:red;
+/* Color de la navegacion */
+.nav-color{
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
 }
+
