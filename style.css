@@ -6,4 +6,6 @@
 
 .justificar{
     text-align: justify;
+    min-width: 500px !important;
+    min-height: 100px !important;
 }
