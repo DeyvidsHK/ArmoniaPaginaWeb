@@ -2,7 +2,7 @@
 /* Importando estilo de letra */
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,600;1,500&display=swap');
 
-body{
+*{
     font-family: 'Urbanist', sans-serif;
 }
 
@@ -19,7 +19,7 @@ body{
 
 /* Color de la navegacion */
 .nav-color{
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: white;
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px); 
 }
