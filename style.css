@@ -1,4 +1,11 @@
 
+/* Importando estilo de letra */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,600;1,500&display=swap');
+
+body{
+    font-family: 'Urbanist', sans-serif;
+}
+
 .imagen{
     width: 100% !important;
     height: 1000px !important;
