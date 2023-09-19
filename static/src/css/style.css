@@ -6,11 +6,10 @@
     font-family: 'Urbanist', sans-serif;
 }
 
+/* Imagen en computadora */
 .imagen{
     width: 100% !important;
-    height: 1000px !important;
-    min-width: 200px !important;
-    min-height: 100px !important;
+    height: 940px !important;
 }
 
 .justificar{
@@ -20,7 +19,10 @@
 /* Color de la navegacion */
 .nav-color{
     background-color: white;
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
+    /* backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);  */
 }
 
+#historia{
+    background: #FFDA77 !important;
+}

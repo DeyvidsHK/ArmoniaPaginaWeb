@@ -9,6 +9,7 @@
     <!-- <link rel="icon" href="img/Armonia_10.jpeg"> -->
     <!-- Incluyendo boostrap -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/src/css/style.css">
 </head>
 
 <body>
@@ -34,14 +35,14 @@
                             <a href="#" class="nav-link navegacion">Música</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link navegacion">Contáctenos</a>
+                            <a href="#" class="nav-link navegacion" data-bs-toggle="modal" data-bs-toggle="#contactoModal">Contáctenos</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    
+
 
     <!-- Carousel de imagenes-->
     <div id="inicio">
@@ -56,21 +57,21 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/grupo.jpg" class="d-block w-100 imagen" alt="...">
+                    <img src="static/src/img/grupo.jpg" class="d-block w-100 imagen" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Etiqueta de la primera diapositiva</h5>
                         <p>Algún contenido placeholder representativo para la primera diapositiva.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/perro2.png" class="d-block w-100 imagen" alt="...">
+                    <img src="static/src/img/perro2.png" class="d-block w-100 imagen" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Etiqueta de la segunda diapositiva</h5>
                         <p>Algún contenido placeholder representativo para la segunda diapositiva.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/perro3.jpg" class="d-block w-100 imagen" alt="...">
+                    <img src="static/src/img/perro3.jpg" class="d-block w-100 imagen" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Etiqueta de la tercera diapositiva</h5>
                         <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
@@ -90,92 +91,98 @@
         </div>
     </div>
 
-    <main>
-        <div class="bg-white pb-3" id="historia">
-            <div class="container pt-3 pb-3">
-                <div class="text-dark text-center pb-3">
-                    <h2>Historia</h2>
-                </div>
+    <div class="bg-white pb-4" id="historia">
+        <div class="container pt-3 pb-3">
+            <div class="text-center pb-3" style="color: black;">
+                <h2>Historia</h2>
+            </div>
 
-                <div class="text-justify justificar text-dark">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.</p>
-                </div>
+            <div class="text-justify justificar text-dark">
+                <p style="color: black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of
+                    Lorem Ipsum.</p>
+                <p style="color: black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of
+                    Lorem Ipsum.</p>
+                <p style="color: black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has survived no
+ 
+t only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of
+                    Lorem Ipsum.</p>
+                <p style="color: black;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of
+                    Lorem Ipsum.</p>
             </div>
-            
-            <div class="container mb-3">
-                <div class="row row-cols-1 row-cols-md-2 g-4 text-center">
-                    <div class="col">
-                      <div class="card">
-                        <img src="img/grupo.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Integrante uno</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="img/grupo.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Integrante dos</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="img/grupo.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Integrante tres</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-                        <img src="img/grupo.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Integrante tres</h5>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-                  
         </div>
 
-
-
-    </main>
-
+        <div class="container mb-3">
+            <div class="row row-cols-1 row-cols-md-2 g-4 text-center">
+                <div class="col">
+                    <div class="card">
+                        <img src="static/src/img/grupo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Integrante uno</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="static/src/img/grupo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Integrante dos</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="static/src/img/grupo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Integrante tres</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="static/src/img/grupo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Integrante tres</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="" id="Contactanos">
+        <div class="container">
+            <div class="row">
+                <h3 class="text-center pt-5">Contactanos</h3>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Incluyendo el javascript jquery -->
