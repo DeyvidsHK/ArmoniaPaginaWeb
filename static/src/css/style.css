@@ -86,3 +86,7 @@
     padding: 1.5rem;
     border-radius: .5rem;   
 }
+
+.w-0{ 
+    width: 0px;
+}
