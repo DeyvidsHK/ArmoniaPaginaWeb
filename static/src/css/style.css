@@ -7,13 +7,13 @@
     --negro : #212121; 
     --primario : #ffc107; 
     --secundario : #0097a7; 
-    --gris : #757575 ; 
     --grisclaro : #dfe9f3 ; 
 }
 
 *{
     font-family: 'Urbanist', sans-serif;
 }
+
 
 /* Imagen en computadora */
 .imagen{
@@ -36,13 +36,15 @@
     background: #FFDA77 !important;
 }
 
+
 .formulario { 
-    background-color: var(--gris);
+    background-color: black;    
     width: min( 60rem , 100% );
     margin: 0 auto; /* Se utiliza marge 0 auto cuando es un formulario y su padre no es un displey: flex **/
     padding: 2rem;
     border-radius: 1rem;
 }
+
 .formulario fieldset{ 
     border: none;
 }
@@ -69,10 +71,11 @@
  }
 }
 .campo { 
+    color: white;
     margin-bottom: 1rem;
 }
-.campo label { 
-    color: var(--blaco);
+.campo label {
+    color: white;
     font-weight: 700;
     margin-bottom: .5rem;
     display: block;
@@ -81,6 +84,8 @@
   height: 20rem; /** Altura **/   
 }
 .input-text{ 
+    background-color: white;
+    opacity: 0.5;
     width: 100%; /* que tome todo el espacio disponible **/
     border: none; /* quitar el borde **/ 
     padding: 1.5rem;
@@ -96,4 +101,5 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    margin: 0;
 }
