@@ -90,3 +90,10 @@
 .w-0{ 
     width: 0px;
 }
+
+.img-fondo{
+    background-image: url(../img/Historia.jpg)!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
