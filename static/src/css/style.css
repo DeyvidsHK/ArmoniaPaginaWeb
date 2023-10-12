@@ -18,6 +18,10 @@ p{
     font-weight: 600;
 }
 
+.modificar{
+    padding-top: 40px;
+}
+
 /* Imagen en computadora */
 .imagen{
     width: 100% !important;
@@ -110,3 +114,58 @@ p{
 .color{
     background-color: var(--primario);
 }
+
+/*musica */
+
+.contenedor {
+    display: block;
+}
+
+.musica {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.musica-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.cancion {
+    background-color: gray;
+    text-align: center;
+}
+
+.cancion img {
+    max-width: 100%;
+}
+
+.cancion a {
+    text-decoration: none;
+    color: #333;
+}
+
+.cancion a:hover {
+    color: #007bff;
+}
+
+
+/* Footer */ 
+.modificar{
+    padding-top: 40px;
+}
+
+a{
+    text-align: center;
+    padding: 5px;
+    margin: 20px 0;
+    transition: font-size 1s;
+}
+
+a:hover{
+    font-size: 25px;
+
+}
+
