@@ -148,7 +148,7 @@ p{
 .musica-lista a {
     text-decoration: none;
     font-size: 18px;
-    transition: font-size 1s;
+    transition: font-size 0.5s;
 }
 .musica-lista a:hover{
     font-size: 20px;
