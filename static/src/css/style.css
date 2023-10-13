@@ -120,56 +120,83 @@ p{
     background-color: var(--primario);
 }
 
-/*musica */
+/*Musica */
 
-.contenedor {
+.cont {
     display: block;
 }
 
 .musica {
-    flex: 1;
+    margin: 0 150px;
     padding: 20px;
-    border: 1px solid #ccc;
     text-align: center;
+    border-radius: 10px;
 }
 .musica-lista {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
-.cancion {
-    background-color: gray;
+.musica-lista img{
+    border-radius: 10%;
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+}
+.musica-lista a {
+    text-decoration: none;
+    font-size: 18px;
+    transition: font-size 1s;
+}
+.musica-lista a:hover{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cancion__d{
+    padding-bottom: 90px;
+}
+.texto__d, .texto__c, .texto__s{
+    margin-top: 15px;
+}
+
+/*Audio */ 
+#reproductor {
+    color: white;
+    padding: 10px;
     text-align: center;
 }
 
-.cancion img {
-    max-width: 100%;
+#reproductor button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Hace que los botones sean redondos */
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra tipo "neón" */
+    margin: 10px; /* Agrega margen entre los botones */
 }
 
-.cancion a {
-    text-decoration: none;
-    color: #333;
-}
-
-.cancion a:hover {
-    color: #007bff;
-}
 
 
 /* Footer */ 
 .modificar{
-    padding-top: 40px;
+    padding-top: 70px;
 }
 
-a{
+.iconos a{
     text-align: center;
     padding: 5px;
     margin: 20px 0;
     transition: font-size 1s;
 }
 
-a:hover{
+.iconos a:hover{
     font-size: 25px;
 
 }
