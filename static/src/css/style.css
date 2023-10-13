@@ -6,8 +6,6 @@
     --blaco : #ffffff ; 
     --negro : #212121; 
     --primario : #ffc107; 
-    --secundario : #0097a7; 
-    --grisclaro : #dfe9f3 ; 
 }
 
 *{
@@ -48,6 +46,7 @@ p{
     background: #FFDA77 !important;
 }
 
+/*Contactenos */
 
 .formulario { 
     background-color: black;    
@@ -170,10 +169,10 @@ p{
 }
 
 #reproductor button {
-    background-color: #333;
+    background-color: var(--primario);
     color: white;
     border: none;
-    border-radius: 50%; /* Hace que los botones sean redondos */
+    border-radius: 50%; 
     width: 50px;
     height: 50px;
     font-size: 16px;
