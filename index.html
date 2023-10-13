@@ -195,7 +195,8 @@
 
     <div class="cont">
         <div class="musica">
-            <h2>Música</h2>
+            <h2 class="m-3">Música</h2>
+            <h3>Lista de Mejores Musicas</h3>
             <div class="musica-lista">
                 <div class="cancion__c">
                     <img src="/static/src/img/Cervecero.png" alt="Música 1">
@@ -203,13 +204,13 @@
                         <h3>Cervecero</h3>
                         <a href="https://www.youtube.com/watch?v=nbyn0axORWA&ab_channel=Armon%C3%ADa10-Topic" target="_blank">Escuchalo Aqui</a>
                         <div id="reproductor">
-                            <audio id="miAudio2" preload="metadata"> <!-- Agregamos preload="metadata" para obtener la duración -->
+                            <audio id="miAudio2" preload="metadata"> 
                                 <source src="/static/src/audio/Cervecero.mp3" type="audio/mpeg">
                                 Tu navegador no soporta la reproducción de audio.
                             </audio>
-                            <button onclick="reproducir(document.getElementById('miAudio2'), 42)">R</button> <!-- 1 minuto 45 segundos -->
-                            <button onclick="pausar(document.getElementById('miAudio2'))">P</button>
-                            <button onclick="reiniciar(document.getElementById('miAudio2'), 42)">R</button>
+                            <button onclick="reproducir(document.getElementById('miAudio2'), 63)"><i class="fa-solid fa-play fa-beat" style="color: #ffffff;"></i></button> 
+                            <button onclick="pausar(document.getElementById('miAudio2'))"><i class="fa-solid fa-pause fa-beat" style="color: #ffffff;"></i></button>
+                            <button onclick="reiniciar(document.getElementById('miAudio2'), 63)"><i class="fa-solid fa-repeat fa-beat" style="color: #ffffff;"></i></button>
                         </div>
                     </div>
                 </div>
@@ -219,13 +220,13 @@
                         <h3>Dios Mio Has Que Me Enamore</h3>
                         <a href="https://www.youtube.com/watch?v=UnWdxP25tqM&ab_channel=Armon%C3%ADa10-Topic" target="_blank">Escuchalo Aqui</a>
                         <div id="reproductor">
-                            <audio id="miAudio3" preload="metadata"> <!-- Agregamos preload="metadata" para obtener la duración -->
+                            <audio id="miAudio3" preload="metadata"> 
                                 <source src="/static/src/audio/Dios Mío Hasta Que Me Enamoré.mp3" type="audio/mpeg">
                                 Tu navegador no soporta la reproducción de audio.
                             </audio>
-                            <button onclick="reproducir(document.getElementById('miAudio3'), 40)">R</button> <!-- 40 segundos -->
-                            <button onclick="pausar(document.getElementById('miAudio3'))">P</button>
-                            <button onclick="reiniciar(document.getElementById('miAudio3'), 40)">R</button>
+                            <button onclick="reproducir(document.getElementById('miAudio3'), 27)"><i class="fa-solid fa-play fa-beat" style="color: #ffffff;"></i></button> 
+                            <button onclick="pausar(document.getElementById('miAudio3'))"><i class="fa-solid fa-pause fa-beat" style="color: #ffffff;"></i></button>
+                            <button onclick="reiniciar(document.getElementById('miAudio3'), 27)"><i class="fa-solid fa-repeat fa-beat" style="color: #ffffff;"></i></button>
                         </div>
                     </div>
                 </div>
@@ -235,13 +236,13 @@
                         <h3>Serpiente</h3>
                         <a href="https://www.youtube.com/watch?v=V9NjujQwkPI&ab_channel=Armon%C3%ADa10-Topic" target="_blank">Escuchalo Aqui</a>
                         <div id="reproductor">
-                            <audio id="miAudio" preload="metadata"> <!-- Agregamos preload="metadata" para obtener la duración -->
+                            <audio id="miAudio" preload="metadata"> 
                                 <source src="/static/src/audio/Serpiente.mp3" type="audio/mpeg">
                                 Tu navegador no soporta la reproducción de audio.
                             </audio>
-                            <button onclick="reproducir(document.getElementById('miAudio'), 60)">R</button> <!-- 1 minuto -->
-                            <button onclick="pausar(document.getElementById('miAudio'))">P</button>
-                            <button onclick="reiniciar(document.getElementById('miAudio'), 60)">V</button>
+                            <button onclick="reproducir(document.getElementById('miAudio'), 30)"><i class="fa-solid fa-play fa-beat" style="color: #ffffff;"></i></button> 
+                            <button onclick="pausar(document.getElementById('miAudio'))"><i class="fa-solid fa-pause fa-beat" style="color: #ffffff;"></i></button>
+                            <button onclick="reiniciar(document.getElementById('miAudio'), 30)"><i class="fa-solid fa-repeat fa-beat" style="color: #ffffff;"></i></button>
                         </div>
                     </div>
                 </div>
@@ -251,8 +252,17 @@
         </div>
         <div class="musica">
             <h2>Más Música</h2>
-            <p>Contenido de "Más Música" aquí...</p>
+            <p>Escuche mas de nuestras canciones en nuestras paginas</p>
+            <div class="division">
+                <div class="">
+                    <a href="#"><i class="fa-brands fa-spotify" style="color: #005c12;"></i></a>
+                </div>
+                <div class="">
+                    <a href="#"><i class="fa-brands fa-youtube" style="color: #ff0000;"></i></a>
+                </div>
+            </div>
         </div>
+
 
     </div>
     
