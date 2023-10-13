@@ -43,13 +43,14 @@ p{
 }
 
 #historia{
-    background: white !important;
+    background-image: linear-gradient( #d83c25,#ff6728,#ff6728, #f8c600, #f2de09,#81c200) !important;
 }
 
 /*Musica */
 
 .cont {
     display: block;
+    background-image: linear-gradient(#81c200,#14af39,#81c200,#ff6728) !important;
 }
 
 .musica {
@@ -102,7 +103,7 @@ p{
 }
 
 .musica:last-child{
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .musica-lista {
@@ -128,6 +129,7 @@ p{
     text-decoration: none;
     font-size: 18px;
     transition: font-size 0.5s;
+    color: white;
 }
 .musica-lista a:hover{
     font-size: 20px;
@@ -190,17 +192,23 @@ p{
 
 /* Footer */ 
 .modificar{
-    padding-top: 70px;
+    padding-top: 50px;
+}
+.iconos{
+    justify-content: center;
+    align-items: center;
 }
 
 .iconos a{
-    text-align: center;
     padding: 5px;
     margin: 20px 0;
     transition: font-size 1s;
 }
 
 .iconos a:hover{
-    font-size: 17px;
+    font-size: 20px;
 }
-
+.iconos p { 
+    color: white;
+    font-size: 13px;
+}
