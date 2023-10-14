@@ -7,7 +7,7 @@ function reproducir(audioElement, startTime) {
         audioPlaying.pause();
     }
     if (audio.paused || restart) {
-        audio.currentTime = startTime;
+        audio.currentTime = restart ? startTime : audio.currentTime;
         audio.play();
         audioPlaying = audio;
         restart = false;
@@ -16,12 +16,13 @@ function reproducir(audioElement, startTime) {
         audio.ontimeupdate = function() {
             if (audio.currentTime >= startTime + duracionMaxima) {
                 audio.pause();
-                audio.currentTime = startTime; 
+                audio.currentTime = startTime;
                 audioPlaying = null;
             }
         };
     }
 }
+
 
 function reiniciar(audioElement, startTime) {
     const audio = audioElement;

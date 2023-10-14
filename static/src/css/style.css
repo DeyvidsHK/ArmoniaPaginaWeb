@@ -149,6 +149,16 @@ p{
 .division__s, .division__y{
     font-size: 180px;
 }
+.etiqueta{
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    transition: font-size 1s;
+}
+.etiqueta:hover{
+    font-size: 32px;
+    font-weight: bold;
+}
 
 /*Audio */ 
 #reproductor {
