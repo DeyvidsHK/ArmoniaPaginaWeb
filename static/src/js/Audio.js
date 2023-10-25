@@ -16,7 +16,7 @@ function reproducir(audioElement, startTime) {
         audio.ontimeupdate = function() {
             if (audio.currentTime >= startTime + duracionMaxima) {
                 audio.pause();
-                audio.currentTime = startTime;
+                audio.currentTime = startTime;  
                 audioPlaying = null;
             }
         };
