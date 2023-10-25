@@ -15,16 +15,25 @@
 p{
     font-weight: 600;
 }
+/* Estilos para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        color: #fff; /* Cambia el color del botón en el menú de navegación para hacerlo visible en fondos oscuros */
+    }
+
+    /* Otros estilos específicos para pantallas pequeñas */
+}
 
 .modificar{
     padding-top: 40px;
 }
 
 /* Imagen en computadora */
-.imagen{
-    width: 100% !important;
-    height: 940px !important;
+.imagen {
+    max-width: 100% !important;
+    height: auto !important;
 }
+
 .card-img-top {
     width: 100%;
     height: 400px;
