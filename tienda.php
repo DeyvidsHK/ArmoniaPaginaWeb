@@ -28,6 +28,9 @@
                             <li class="nav-item">
                                 <a href="tienda.html" class="nav-link navegacion text-white" >Tienda</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal_cart" style="color: red;"><i class="fas fa-shopping-cart"></i> <?php echo $totalcantidad; ?></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -48,26 +51,6 @@
         $totalcantidad += $total_cantidad;
         }}}
     ?>
-
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Mi tienda</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal_cart" style="color: red;"><i class="fas fa-shopping-cart"></i> <?php echo $totalcantidad; ?></a>
-            </li>
-        </ul>
-        </div>
-    </div>
-    </nav>
-    <!-- END NAVBAR -->
-
-
 
     <!-- MODAL CARRITO -->
     <div class="modal fade" id="modal_cart" tabindex="-1"  aria-hidden="true">
