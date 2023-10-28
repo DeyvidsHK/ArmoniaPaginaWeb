@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Armonia 10</title>
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="icon" href="img/Armonia_10.jpeg"> -->
@@ -11,6 +12,25 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/src/css/style.css">
     <script src="https://kit.fontawesome.com/cba7ea8396.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lcfa9UoAAAAADi4UP9HSl-0kPaTUUBk7lLzYHAQ"></script>
+    <script type="text/javascript" src="/static/src/js/ValidarFormulario.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#enviar').click(function () {
+                grecaptcha.ready(function() {
+                grecaptcha.execute('6Lcfa9UoAAAAADi4UP9HSl-0kPaTUUBk7lLzYHAQ', {
+                    action: 'validarUsuario'
+                }).then(function(token) {
+                    $('#form-contactanos').prepend('<input type="hidden" name="token" value="'+token+'" >');
+                    $('#form-contactanos').prepend('<input type="hidden" name="action" value="validarUsuario" >');
+                    $('#form-contactanos').submit();
+                });
+          }); 
+            })
+        }
+        )
+    </script>
 </head>
 
 <body>
@@ -286,36 +306,38 @@
         <div id="contactanos">
             <div class="container" >
                 <div class="pt-5 pb-5">
-                    <form class="blur-background">
+                    <form id= form-contactanos class="blur-background" action="enviarFormulario.php" method="post">
                         <div class="row">
                             <div class="col-12 text-center">
                                 <p class="font-monospace text-dark" style="font-size: 32px;">CONTACTANOS</p>
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                                    <input type="text" class="form-control" name="nombre" placeholder="Nombre" aria-label="Nombre" required>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="input-group mb-3">
-                                    <input type="number" class="form-control" placeholder="Telefono" aria-label="Telefono">
+                                    <input type="number" class="form-control" name="telefono" placeholder="Telefono" aria-label="Telefono" required>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="input-group mb-3">
                                     <span class="input-group-text">@</span>
-                                    <input type="email" class="form-control" placeholder="Correo" aria-label="Correo">
+                                    <input type="email" class="form-control" name="correo" placeholder="Correo" aria-label="Correo" required>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="input-group mb-3">
-                                    <textarea class="form-control"rows="12"></textarea>
+                                    <textarea class="form-control" name="mensaje" rows="12" required></textarea>
                                 </div>
                             </div>
                             <div class="col-md-4 offset-md-4 text-center">
-                                <button class="btn btn-success btn-lg" type="submit">Enviar</button>
+                                <button id=enviar class="btn btn-success btn-lg" type="submit">Enviar</button>
                             </div>
+                            
                         </div>
+                        
                     </form>
                 </div>
             </div>
