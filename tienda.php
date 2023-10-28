@@ -30,7 +30,7 @@ if (isset($_SESSION['carrito'])) {
 </head>
 <style>
     .fondo{
-    background-image: linear-gradient( #d83c25,#ff6728,#ff6728, #f8c600, #f2de09,#81c200) !important;
+    background-image: linear-gradient(to right, #d83c25,#ff6728,#ff6728, #f8c600, #f2de09,#f8c600, #f2de09,#d83c25,#ff6728) !important;
     }
 </style>
 <body class="fondo">
@@ -133,13 +133,13 @@ if (isset($_SESSION['carrito'])) {
 
         <div class="card m-4" style="width: 18rem;">
             <form id="formulario" name="formulario" method="post" action="cart.php">
-                <input name="precio" type="hidden" id="precio" value="10" />
+                <input name="precio" type="hidden" id="precio" value="15" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 1" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
                 <img src="static/src/img/tienda-1.png" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
-                    <h5 class="card-title">Producto 1</h5>
-                    <p class="card-text">Descripción - Precio S/10</p>
+                    <h5 class="card-title">Polo diseño 1</h5>
+                    <p class="card-text">Descripción - Precio S/15</p>
                     <div class="boton-container">
                         <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                     </div>
@@ -149,13 +149,13 @@ if (isset($_SESSION['carrito'])) {
 
         <div class="card m-4" style="width: 18rem;">
             <form id="formulario" name="formulario" method="post" action="cart.php">
-                <input name="precio" type="hidden" id="precio" value="20" />
+                <input name="precio" type="hidden" id="precio" value="35" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 2" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
                 <img src="static/src/img/tienda-2.png" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
-                    <h5 class="card-title">Producto 2</h5>
-                    <p class="card-text">Descripción - Precio S/20</p>
+                    <h5 class="card-title">Chaqueta diseño 1</h5>
+                    <p class="card-text">Descripción - Precio S/35</p>
                     <div class="boton-container">
                         <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                     </div>
@@ -165,13 +165,13 @@ if (isset($_SESSION['carrito'])) {
 
         <div class="card m-4" style="width: 18rem;">
             <form id="formulario" name="formulario" method="post" action="cart.php">
-                <input name="precio" type="hidden" id="precio" value="30" />
+                <input name="precio" type="hidden" id="precio" value="15" />
                 <input name "titulo" type="hidden" id="titulo" value="articulo 3" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
                 <img src="static/src/img/tienda-3.png" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
-                    <h5 class="card-title">Producto 3</h5>
-                    <p class="card-text">Descripción - Precio S/30</p>
+                    <h5 class="card-title">Polo diseño negro</h5>
+                    <p class="card-text">Descripción - Precio S/15</p>
                     <div class="boton-container">
                         <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                     </div>
@@ -181,13 +181,13 @@ if (isset($_SESSION['carrito'])) {
 
         <div class="card m-4" style="width: 18rem;">
             <form id="formulario" name="formulario" method="post" action="cart.php">
-                <input name="precio" type="hidden" id="precio" value="20" />
+                <input name="precio" type="hidden" id="precio" value="40" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 4" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-2.png" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-4.jpeg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
-                    <h5 class="card-title">Producto 4</h5>
-                    <p class="card-text">Descripción - Precio S/20</p>
+                    <h5 class="card-title">Chaqueta diseño 2</h5>
+                    <p class="card-text">Descripción - Precio S/40</p>
                     <div class="boton-container">
                         <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                     </div>
@@ -197,13 +197,13 @@ if (isset($_SESSION['carrito'])) {
 
         <div class="card m-4" style="width: 18rem;">
             <form id="formulario" name="formulario" method="post" action="cart.php">
-                <input name="precio" type="hidden" id="precio" value="20" />
+                <input name="precio" type="hidden" id="precio" value="40" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 5" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-2.png" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-5.jpeg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
-                    <h5 class="card-title">Producto 5</h5>
-                    <p class="card-text">Descripción - Precio S/20</p>
+                    <h5 class="card-title">Chaqueta diseño 3</h5>
+                    <p class="card-text">Descripción - Precio S/40</p>
                     <div class="boton-container">
                         <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                     </div>
@@ -216,9 +216,9 @@ if (isset($_SESSION['carrito'])) {
                 <input name="precio" type="hidden" id="precio" value="20" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 6" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-2.png" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-7.jpeg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
-                    <h5 class="card-title">Producto 6</h5>
+                    <h5 class="card-title">Polo estapando de cumbia</h5>
                     <p class="card-text">Descripción - Precio S/20</p>
                     <div class="boton-container">
                         <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
@@ -232,9 +232,9 @@ if (isset($_SESSION['carrito'])) {
                 <input name="precio" type="hidden" id="precio" value="20" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 7" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-2.png" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-6.jpeg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
-                    <h5 class="card-title">Producto 7</h5>
+                    <h5 class="card-title">Gorra diseño 1</h5>
                     <p class="card-text">Descripción - Precio S/20</p>
                     <div class="boton-container">
                         <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
@@ -248,9 +248,9 @@ if (isset($_SESSION['carrito'])) {
                 <input name="precio" type="hidden" id="precio" value="20" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 8" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-2.png" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-8.jpeg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
-                    <h5 class="card-title">Producto 8</h5>
+                    <h5 class="card-title">Gorra diseño 2</h5>
                     <p class="card-text">Descripción - Precio S/20</p>
                     <div class="boton-container">
                         <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
@@ -261,13 +261,13 @@ if (isset($_SESSION['carrito'])) {
 
         <div class="card m-4" style="width: 18rem;">
             <form id="formulario" name="formulario" method="post" action="cart.php">
-                <input name="precio" type="hidden" id="precio" value="20" />
+                <input name="precio" type="hidden" id="precio" value="15" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 9" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-2.png" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-9.jpeg" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
-                    <h5 class="card-title">Producto 9</h5>
-                    <p class="card-text">Descripción - Precio S/20</p>
+                    <h5 class="card-title">Cantimplora Armonia 10</h5>
+                    <p class="card-text">Descripción - Precio S/15</p>
                     <div class="boton-container">
                         <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
                     </div>
