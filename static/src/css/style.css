@@ -231,3 +231,8 @@ p{
     color: white;
     font-size: 13px;
 }
+
+/* tienda */
+.boton-container {
+    margin: 0 auto;
+}
