@@ -28,7 +28,12 @@ if (isset($_SESSION['carrito'])) {
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/src/css/style.css">
 </head>
-<body>
+<style>
+    .fondo{
+    background-image: linear-gradient( #d83c25,#ff6728,#ff6728, #f8c600, #f2de09,#81c200) !important;
+    }
+</style>
+<body class="fondo">
 <header>
     <!-- Navegacion de la pagina -->
     <nav class="navbar fixed-top navbar-expand-lg nav-color bg-dark">
