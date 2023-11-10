@@ -49,9 +49,6 @@ if (isset($_SESSION['carrito'])) {
                         <a href="index.html" class="nav-link navegacion text-white">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="tienda.html" class="nav-link navegacion text-white">Tienda</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal_cart" style="color: red;">Carrito <?php echo $totalcantidad; ?></a>
                     </li>
                 </ul>
@@ -96,7 +93,11 @@ if (isset($_SESSION['carrito'])) {
                                 }
                                 ?>
                                 <li class="list-group-item d-flex justify-content-between">
+<<<<<<< HEAD
                                     <span style="text-align: left; color: #000000;">Total (Sol)</span>
+=======
+                                    <span style="text-align: left; color: #000000;">Total (SOL)</span>
+>>>>>>> 6a3e805cb40f6bdf3b477a5be7500c8b1e8b207a
                                     <strong style="text-align: left; color: #000000;">
                                         <?php
                                         if (isset($_SESSION['carrito'])) {
@@ -121,6 +122,7 @@ if (isset($_SESSION['carrito'])) {
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 <a type="button" class="btn btn-primary" href="borrarcarro.php">Vaciar carrito</a>
+                <a type="button" class="btn btn-primary" href="realizarPago.php">Realizar Pago</a>
             </div>
         </div>
     </div>
@@ -128,8 +130,10 @@ if (isset($_SESSION['carrito'])) {
 <!-- END MODAL CARRITO -->
 
 <!-- ARTICULOS -->
+
 <div class="container mt-5">
     <div class="row" style="justify-content: center">
+<<<<<<< HEAD
 
         <div class="card m-4" style="width: 18rem;">
             <form id="formulario" name="formulario" method="post" action="cart.php">
@@ -274,6 +278,11 @@ if (isset($_SESSION['carrito'])) {
                 </div>
             </form>
         </div>
+=======
+    <?php
+      include "mostrarProductos.php";
+    ?>
+>>>>>>> 6a3e805cb40f6bdf3b477a5be7500c8b1e8b207a
     </div>
 </div>
 <!-- END ARTICULOS -->
