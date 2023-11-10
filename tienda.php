@@ -65,7 +65,7 @@ if (isset($_SESSION['carrito'])) {
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -96,7 +96,7 @@ if (isset($_SESSION['carrito'])) {
                                 }
                                 ?>
                                 <li class="list-group-item d-flex justify-content-between">
-                                    <span style="text-align: left; color: #000000;">Total (EUR)</span>
+                                    <span style="text-align: left; color: #000000;">Total (Sol)</span>
                                     <strong style="text-align: left; color: #000000;">
                                         <?php
                                         if (isset($_SESSION['carrito'])) {
@@ -136,7 +136,7 @@ if (isset($_SESSION['carrito'])) {
                 <input name="precio" type="hidden" id="precio" value="15" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 1" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-1.png" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-1.png" class="card-img-top pt-3" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
                     <h5 class="card-title">Polo diseño 1</h5>
                     <p class="card-text">Descripción - Precio S/15</p>
@@ -152,7 +152,7 @@ if (isset($_SESSION['carrito'])) {
                 <input name="precio" type="hidden" id="precio" value="35" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 2" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-2.png" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-2.png" class="card-img-top pt-3" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
                     <h5 class="card-title">Chaqueta diseño 1</h5>
                     <p class="card-text">Descripción - Precio S/35</p>
@@ -168,7 +168,7 @@ if (isset($_SESSION['carrito'])) {
                 <input name="precio" type="hidden" id="precio" value="15" />
                 <input name "titulo" type="hidden" id="titulo" value="articulo 3" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-3.png" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-3.png" class="card-img-top pt-3" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
                     <h5 class="card-title">Polo diseño negro</h5>
                     <p class="card-text">Descripción - Precio S/15</p>
@@ -184,7 +184,7 @@ if (isset($_SESSION['carrito'])) {
                 <input name="precio" type="hidden" id="precio" value="40" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 4" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-4.jpeg" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-4.jpeg" class="card-img-top pt-3" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
                     <h5 class="card-title">Chaqueta diseño 2</h5>
                     <p class="card-text">Descripción - Precio S/40</p>
@@ -200,7 +200,7 @@ if (isset($_SESSION['carrito'])) {
                 <input name="precio" type="hidden" id="precio" value="40" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 5" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-5.jpeg" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-5.jpeg" class="card-img-top pt-3" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
                     <h5 class="card-title">Chaqueta diseño 3</h5>
                     <p class="card-text">Descripción - Precio S/40</p>
@@ -216,9 +216,9 @@ if (isset($_SESSION['carrito'])) {
                 <input name="precio" type="hidden" id="precio" value="20" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 6" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-7.jpeg" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-7.jpeg" class="card-img-top pt-3" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
-                    <h5 class="card-title">Polo estapando de cumbia</h5>
+                    <h5 class="card-title text-center">Polo cumbia</h5>
                     <p class="card-text">Descripción - Precio S/20</p>
                     <div class="boton-container">
                         <button class="btn btn-primary" type="submit"><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
@@ -232,7 +232,7 @@ if (isset($_SESSION['carrito'])) {
                 <input name="precio" type="hidden" id="precio" value="20" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 7" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-6.jpeg" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-6.jpeg" class="card-img-top pt-3" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
                     <h5 class="card-title">Gorra diseño 1</h5>
                     <p class="card-text">Descripción - Precio S/20</p>
@@ -248,7 +248,7 @@ if (isset($_SESSION['carrito'])) {
                 <input name="precio" type="hidden" id="precio" value="20" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 8" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-8.jpeg" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-8.jpeg" class="card-img-top pt-3" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
                     <h5 class="card-title">Gorra diseño 2</h5>
                     <p class="card-text">Descripción - Precio S/20</p>
@@ -264,7 +264,7 @@ if (isset($_SESSION['carrito'])) {
                 <input name="precio" type="hidden" id="precio" value="15" />
                 <input name="titulo" type="hidden" id="titulo" value="articulo 9" />
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
-                <img src="static/src/img/tienda-9.jpeg" class="card-img-top" alt="...">
+                <img src="static/src/img/tienda-9.jpeg" class="card-img-top pt-3" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center"">
                     <h5 class="card-title">Cantimplora Armonia 10</h5>
                     <p class="card-text">Descripción - Precio S/15</p>
