@@ -7,9 +7,21 @@
 			$titulo=$_POST['titulo'];
 			$precio=$_POST['precio'];
 			$cantidad=$_POST['cantidad'];
-			$num=0;
-     		$carrito_mio[]=array("titulo"=>$titulo,"precio"=>$precio,"cantidad"=>$cantidad);
- 		}
+			$producto_existente = false;
+
+        // Verificar si el producto ya existe en el carrito
+        foreach ($carrito_mio as $key => $item) {
+            if ($item['titulo'] == $titulo) {
+                $carrito_mio[$key]['cantidad'] += $cantidad;
+                $producto_existente = true;
+            }
+        }
+
+        // Si el producto no existe, agregarlo al carrito
+        if (!$producto_existente) {
+            $carrito_mio[] = array("titulo" => $titulo, "precio" => $precio, "cantidad" => $cantidad);
+        }
+    }
 	}else{
 		$titulo=$_POST['titulo'];
 		$precio=$_POST['precio'];
