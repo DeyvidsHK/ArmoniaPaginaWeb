@@ -19,7 +19,7 @@ if ($resultado) {
                 <input name="cantidad" type="hidden" id="cantidad" value="1" class="pl-2" />
                 <img src="<?php echo $baseURL . $row['imagen']; ?>" class="card-img-top" alt="...">
                 <div class="card-body d-flex flex-column align-items-center justify-content-center">
-                    <h5 class="card-title"><?php echo $row['nombre']; ?></h5>
+                    <h5 class="card-title text-center"><?php echo $row['nombre']; ?></h5>
 										<p class="card-text"><?php echo $row['descripcion']; ?></p>
                     <p class="card-text">S/<?php echo $row['precio']; ?></p>
                     <div class="boton-container">
