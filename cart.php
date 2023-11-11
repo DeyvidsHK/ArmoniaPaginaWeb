@@ -1,4 +1,5 @@
-<?php session_start(); 
+<?php 
+session_start(); 
 //aqui empieza el carrito
 
 	if(isset($_SESSION['carrito'])){

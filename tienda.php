@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 $carrito_mio = isset($_SESSION['carrito']) ? $_SESSION['carrito'] : array();
@@ -51,7 +52,7 @@ if (isset($_SESSION['carrito'])) {
 							<a href="index.html" class="nav-link navegacion text-white">Inicio</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link navegacion text-white">Registrar</a>
+							<a href="login.php" class="nav-link navegacion text-white">Registrar</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal_cart" style="color: red;">Carrito
@@ -129,10 +130,25 @@ if (isset($_SESSION['carrito'])) {
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+						<?php
+						// Verifica si el usuario está autenticado
+							
+							if (!isset($_SESSION["usuario"])) {
+								echo "
+									<a type='button' class='btn btn-primary' 
+									onclick=\"alert('Por favor, inicia sesión para realizar el pago'); 
+												window.location.href = '/ArmoniaPaginaWeb/ArmoniaPaginaWeb/login.php';\">
+									Realizar Pagos
+									</a>
+								";
+							} else {
+								// Si el usuario está autenticado, muestra el botón normalmente
+								echo "<a id='realizarPagoBtn' type='button' class='btn btn-primary' data-bs-dismiss='modal'>Realizar Pago</a>";
+							}
+						?>
+
 					<a type="button" class="btn btn-primary" href="borrarcarro.php">Vaciar carrito</a>
-					<a id="realizarPagoBtn" type="button" class="btn btn-primary" data-bs-dismiss="modal">Realizar
-						Pago</a>
-				</div>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -155,10 +171,13 @@ if (isset($_SESSION['carrito'])) {
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
 					<a type="button" class="btn btn-primary" href="#">Confirmar Pago</a>
+					
 				</div>
 			</div>
 		</div>
 	</div>
+
+	
 	<!-- END MODAL PAGO -->
 
 
