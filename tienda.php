@@ -169,8 +169,9 @@ if (isset($_SESSION['carrito'])) {
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-					<a type="button" class="btn btn-primary" href="#">Confirmar Pago</a>
-					
+					<form action="registrarVenta.php" method="POST">
+						<button type="submit" class="btn btn-primary" name="confirmarPagoBtn">Confirmar Pago</button>
+					</form>
 				</div>
 			</div>
 		</div>
