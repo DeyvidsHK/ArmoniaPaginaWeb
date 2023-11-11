@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 $carrito_mio = isset($_SESSION['carrito']) ? $_SESSION['carrito'] : array();

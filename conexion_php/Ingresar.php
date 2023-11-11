@@ -7,8 +7,6 @@
     $correo = $_POST['correo'];
     $contrasena = $_POST['contrasena'];
     $contrasena = hash('sha512', $contrasena);
-
-
     $validar_lg = mysqli_query($conexion, "SELECT * FROM clientes WHERE correo= '$correo' and contrasena='$contrasena' ") ; 
 
     if (mysqli_num_rows($validar_lg)>0){
