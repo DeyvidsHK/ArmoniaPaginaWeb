@@ -28,6 +28,7 @@ if (isset($_SESSION['carrito'])) {
 	<title>Tienda | Amonia 10</title>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="static/src/css/style.css">
+	<script src="jquery/code.jquery.com_jquery-3.7.1.min.js"></script>
 </head>
 <style>
 	.fondo {
@@ -154,11 +155,13 @@ if (isset($_SESSION['carrito'])) {
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-					<a type="button" class="btn btn-primary" href="#">Confirmar Pago</a>
+					<a id="confirmarPagoBtn" type="button" class="btn btn-primary">Confirmar Pago</a>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	
 	<!-- END MODAL PAGO -->
 
 
@@ -172,11 +175,11 @@ if (isset($_SESSION['carrito'])) {
 	</div>
 	<!-- END ARTICULOS -->
 
-	<!-- Incluyendo el JavaScript de jQuery -->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<!-- Incluyendo el JavaScript de Bootstrap -->
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="static/src/js/funcionModal.js"></script>
+	<script src="static/src/js/registrarVenta.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js'></script>
+
 </body>
 </html>
