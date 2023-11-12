@@ -53,6 +53,6 @@
 
         </main>
 
-        <script src="../ArmoniaPaginaWeb/static/src/js/login.js""></script>
+        <script src="../ArmoniaPaginaWeb/static/src/js/login.js"></script>
 </body>
 </html>

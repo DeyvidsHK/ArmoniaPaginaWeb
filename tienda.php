@@ -69,7 +69,7 @@ if (isset($_SESSION['carrito'])) {
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
@@ -136,7 +136,7 @@ if (isset($_SESSION['carrito'])) {
 								echo "
 									<a type='button' class='btn btn-primary' 
 									onclick=\"alert('Por favor, inicia sesión para realizar el pago'); 
-												window.location.href = '/ArmoniaPaginaWeb/ArmoniaPaginaWeb/login.php';\">
+												window.location.href = '/ArmoniaPaginaWeb/login.php';\">
 									Realizar Pagos
 									</a>
 								";

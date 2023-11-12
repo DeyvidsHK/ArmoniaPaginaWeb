@@ -1,9 +1,6 @@
 <?php
-<<<<<<< HEAD
+
 $servername = "db";
-=======
-$servername = "localhost:8000";
->>>>>>> 7d2e6d3ac2d0e8465b7b261809dd00e7ab931aec
 $username = "root";
 $password = "test";
 $database = "armonia";
