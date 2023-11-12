@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
+$servername = "db";
 $username = "root";
-$password = "";
-$database = "bd_armonia10";
+$password = "test";
+$database = "armonia";
 
 // Crear conexión
 $conexion = new mysqli($servername, $username, $password, $database);

@@ -1,6 +1,6 @@
 <?php
 
-    $conexion = mysqli_connect('localhost','root', '', 'bd_armonia10');
+    $conexion = mysqli_connect('db','root', 'test', 'armonia');
 
     /*
     if ($conexion) {
